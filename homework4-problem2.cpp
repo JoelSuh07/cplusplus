@@ -21,7 +21,7 @@ bool isRightTriangle(double a, double b, double c){
 int main(){
     cout << "Enter 3 digits: ";
     cin >> a >> b >> c;
-    isTriangle(a,b,c) ? cout << "The numbers can form a triangle." 
+    isTriangle(a,b,c) ? cout << "The numbers can form a triangle.\n" 
     : cout << "The numbers cannot form a triangle.\n";
     isRightTriangle(a,b,c) ? cout << "The numbers can form a right triangle."
     : cout << "The numbers cannot form a right triangle.";
