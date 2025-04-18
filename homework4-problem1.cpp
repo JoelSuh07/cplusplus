@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int digit,one,two,three,four,five;
+int digit,one,two,three,four,five,number;
 
 bool checkPalindrome(int digit){
     one = digit / 10000;
@@ -20,8 +20,8 @@ bool checkPalindrome(int digit){
 
 int main(){
     cout << "Enter a 5-digit number: ";
-    cin >> digit;
-    if(checkPalindrome(digit)){
+    cin >> number;
+    if(checkPalindrome(number)){
         cout << "The number is a palindrome." << endl;
     }else{
         cout << "The number is not a palindrome." << endl;
