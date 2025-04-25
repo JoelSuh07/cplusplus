@@ -31,8 +31,8 @@ double calcTotal();
 void showEachPrice();
 void showEachProduct();
 
-double product[2][5] = {
-		{1, 2, 3, 4, 5},
+pair <string, double> product[2][5] = {
+		{"Product 1", "Product 2", "Product 3", "Product 4", "Product 5"},
 		{2.98, 4.50, 9.98, 4.49, 6.87}
 };
 
@@ -47,27 +47,27 @@ int main(){
 
 		switch(num){
 		case 1:
-			cout << "Product 1 is $2.98";
-			productName.push_back("Product 1");
-			productPrice.push_back(2.98);
+			cout << "Product 1 is $2.98" << endl;
+			productName.push_back(product[0][0]);
+			productPrice.push_back(product[1][0]);
 			break;
 		case 2:
-			cout << "Product 2 is $4.50";
+			cout << "Product 2 is $4.50" << endl;
 			productName.push_back("Product 2");
 			productPrice.push_back(4.50);
 			break;
 		case 3:
-			cout << "Product 3 is $9.98";
+			cout << "Product 3 is $9.98" << endl;
 			productName.push_back("Product 3");
 			productPrice.push_back(9.98);
 			break;
 		case 4:
-			cout << "Product 4 is $4.49";
+			cout << "Product 4 is $4.49" << endl;
 			productName.push_back("Product 4");
 			productPrice.push_back(4.49);
 			break;
 		case 5:
-			cout << "Product 5 is $6.87";
+			cout << "Product 5 is $6.87" << endl;
 			productName.push_back("Product 5");
 			productPrice.push_back(6.87);
 			break;
@@ -76,22 +76,22 @@ int main(){
 			}
 		}
 
-	/*showEachPrice();
+	showEachPrice();
 	showEachProduct();
-	calcTotal();*/
+	cout << "Total price is : " << calcTotal();
 
 	return 0;
 }
 
 double calcTotal(){
-	for (int i : productPrice){
+	for (double i : productPrice){
 		total += i;
 	}
 	return total;
 }
 
 void showEachPrice(){
-	for (int i : productPrice){
+	for (double i : productPrice){
 		cout << i << endl;
 	}
 }
@@ -101,5 +101,4 @@ void showEachProduct(){
 		cout << i << endl;
 	}
 }
-
 
