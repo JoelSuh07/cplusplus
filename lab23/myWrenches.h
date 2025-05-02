@@ -2,11 +2,12 @@
  * myWrenches.h
  *
  *  Created on: Apr 29, 2025
- *      Author: student
+ *      Author: Joel Suh
  */
 
 #ifndef MYWRENCHES_H_
 #define MYWRENCHES_H_
+using namespace std;
 
 enum Wrench{
 	CRESCENT,
