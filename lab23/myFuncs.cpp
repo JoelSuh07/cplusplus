@@ -35,6 +35,7 @@ void pToolbox( Toolbox const & myToolbox ){
 	cout << "number of wrenches: " << myToolbox.numWrenches << endl;
 	cout << "Size: " << myToolbox.size << endl;
 	cout << "Number of drawers: " << myToolbox.numDrawers << endl;
+	cout << "Kind of wrenches: " << wrenchToString[myToolbox.myWrench] << endl;
 }
 
 void getToolbox( Toolbox & myToolbox ){
@@ -47,7 +48,10 @@ void getToolbox( Toolbox & myToolbox ){
 	cin >> myToolbox.numDrawers;
 	cin.get();
 	cout << "What kind of wrench do you have?: ";
-	/*cin >>*/
+	string w;
+	cin >> w;
+	myToolbox.myWrench = stringToWrench(w);
+	cin.get();
 }
 
 void pGarage( Garage const & gar ){
@@ -68,15 +72,26 @@ void getGarage( Garage & gar ){
 Wrench stringToWrench(const string & myWrench){
 	if (myWrench == "CRESCENT"){
 		return CRESCENT;
+	} else if (myWrench == "PLUMBERS"){
+		return PLUMBERS;
+	} else if (myWrench == "BASIN"){
+		return BASIN;
+	} else if (myWrench == "PIPE"){
+		return PIPE;
+	} else if (myWrench == "OPEN_ENDED"){
+		return OPEN_ENDED;
+	} else if (myWrench == "DOG_BONE"){
+		return DOG_BONE;
+	} else if (myWrench == "CROWFOOT"){
+		return CROWFOOT;
+	} else if (myWrench == "LUG"){
+		return LUG;
+	} else if (myWrench == "FAN_CLUTCH"){
+		return FAN_CLUTCH;
+	} else if (myWrench == "STRIKING"){
+		return STRIKING;
+	} else {
+		return THATS_NOT_A_WRENCH;
 	}
-	PLUMBERS,
-	BASIN,
-	PIPE,
-	OPEN_ENDED,
-	DOG_BONE,
-	CROWFOOT,
-	LUG,
-	FAN_CLUTCH,
-	STRIKING)
 }
 

@@ -9,6 +9,9 @@
 #define MYWRENCHES_H_
 using namespace std;
 
+static string const wrenchToString[] = {
+		"Crescent","Plumbers","Basin","Pipe","Open ended","Dog bone","Crowfoot","Lug","Fan clutch","Striking","That's not a wrench"
+};
 enum Wrench{
 	CRESCENT,
 	PLUMBERS,
@@ -19,8 +22,10 @@ enum Wrench{
 	CROWFOOT,
 	LUG,
 	FAN_CLUTCH,
-	STRIKING
+	STRIKING,
+	THATS_NOT_A_WRENCH
 };
+
 
 
 
