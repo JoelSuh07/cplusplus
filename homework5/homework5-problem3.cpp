@@ -9,15 +9,18 @@
 #include <iostream>
 using namespace std;
 
+int i,k,j;
+
 int main(){
 
-	for (int i=0;i<5;i++){
-		for (int k=4;k>0;k--){
+	for (i=0;i<5;i++){
+		for (k=i;k<=5;k++){
 			cout << " ";
 		}
-		for (int j=0;j<10;j++){
+		for (j=1;j<i+2;j++){
 			cout << "*";
 		}
+
 		cout << endl;
 	}
 
