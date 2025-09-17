@@ -16,7 +16,7 @@ class TaxTableTools {
    public:
       TaxTableTools();
       double GetValue(int searchArgument);
-      void SetValue();
+      void SetTables(vector<int> search, vector<double> value);
    private:
       vector<int> search;
       vector<double> value;
