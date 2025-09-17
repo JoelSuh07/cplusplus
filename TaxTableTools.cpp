@@ -26,8 +26,8 @@ TaxTableTools::TaxTableTools() {
 //        The function receives as parameters tables from which to load the
 //        search and value tables.
 
-void TaxTableTools::SetTables(){
-   search =
+void TaxTableTools::SetTables(vector<int>search, vector<double>value){
+   search
 }
 // ************************************************************************
 
