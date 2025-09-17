@@ -16,10 +16,10 @@ int GetInteger(const string userPrompt) {
 // **********************************************************************
 
 int main() {
-   const string PROMPT_SALARY = "\nEnter annual salary (-1 to exit)";
    int annualSalary;
    double taxRate;
    int taxToPay;
+   const string PROMPT_SALARY = "\nEnter annual salary (-1 to exit)";
    vector<int> salaryBase(5);
    vector<double> taxBase(5);
 
@@ -40,8 +40,7 @@ int main() {
    // FIXME: Call a setter function in the TaxTableClass that supplies new tables for
    //        the class to work with. The function should be called with:
    //        table.SetTables(salaryBase, taxBase);
-   table.SetTables(salaryBase, taxBase){
-   }
+   table.SetTables(salaryBase,taxBase);
 
    // Get the first annual salary to process
    annualSalary = GetInteger(PROMPT_SALARY);
