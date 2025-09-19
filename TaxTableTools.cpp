@@ -27,7 +27,9 @@ TaxTableTools::TaxTableTools() {
 //        search and value tables.
 
 void TaxTableTools::SetTables(vector<int>search, vector<double>value){
-   search
+   this->search=search;
+   this->value=value;
+   nEntries=search.size();
 }
 // ************************************************************************
 
